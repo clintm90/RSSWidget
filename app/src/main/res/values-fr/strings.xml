@@ -1,0 +1,15 @@
+<resources>
+
+    <string name="action_newfeed">Ajouter un flux</string>
+    <string name="add">Ajouter</string>
+    <string name="add_widget">Ajouter un widget</string>
+    <string name="app_name">RSSWidget</string>
+    <string name="cancel">Annuler</string>
+    <string name="configure">Configurer</string>
+    <string name="feedtitle">Nom du flux</string>
+    <string name="feedurl">Adresse du flux</string>
+    <string name="noset">.</string>
+    <string name="valid">Valider</string>
+    <string name="norssurl">URL invalide</string>
+
+</resources>

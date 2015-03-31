@@ -1,0 +1,334 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/widget_margin"
+    android:id="@+id/Root"
+    android:background="#09C">
+
+    <ViewFlipper
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/MainContainer"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:autoStart="true"
+        android:inAnimation="@anim/in_from_top"
+        android:outAnimation="@anim/out_from_top"
+        android:flipInterval="15000"
+        android:animateFirstView="true">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/FeedPhoto"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/helicopter"
+                android:scaleType="centerCrop"
+                android:background="@drawable/gradient"/>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/FeedGradient"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/gradient"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Germanwings co-pilot planned to &apos;make everyone remember&apos; him, ex-girlfriend says"
+                android:id="@+id/FeedDescription"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:lines="2"
+                android:ellipsize="end"
+                android:shadowRadius="0.5"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowColor="#AA000000" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                android:text="Les déclarations de l’Iran et des 5+1 sur le nucléaire diffèrent"
+                android:id="@+id/FeedTitle"
+                android:layout_above="@+id/FeedDescription"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="#FFFFFF"
+                android:textSize="23sp"
+                android:layout_marginLeft="10dp"
+                android:paddingBottom="5dp"
+                android:layout_marginRight="10dp"
+                android:ellipsize="end"
+                android:shadowRadius="0.5"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowColor="#CC000000"
+                android:lines="3"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/SourceLogo"
+                android:layout_above="@+id/FeedTitle"
+                android:layout_alignLeft="@+id/FeedTitle"
+                android:layout_alignStart="@+id/FeedTitle"
+                android:src="@drawable/rt"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="RT France"
+                android:id="@+id/SourceTitle"
+                android:layout_above="@+id/FeedTitle"
+                android:layout_toRightOf="@+id/SourceLogo"
+                android:layout_toEndOf="@+id/SourceLogo"
+                android:layout_marginBottom="5dp"
+                android:textColor="#EEEEEE"
+                android:layout_marginLeft="10dp"
+                android:shadowRadius="0.5"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowColor="#AA000000" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/FeedPhoto2"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/a551809f671139e94278b456a"
+                android:scaleType="centerCrop"
+                android:background="@drawable/gradient"/>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/FeedGradient2"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/gradient"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Le directeur de cabinet du président Obama, Denis McDonough, a déc"
+                android:id="@+id/FeedDescription2"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:lines="2"
+                android:ellipsize="end"
+                android:shadowRadius="0.5"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowColor="#AA000000" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                android:text="Le Yémen bombardé par les forces contre-révolutionnaires"
+                android:id="@+id/FeedTitle2"
+                android:layout_above="@+id/FeedDescription2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="#FFFFFF"
+                android:textSize="23sp"
+                android:layout_marginLeft="10dp"
+                android:paddingBottom="5dp"
+                android:layout_marginRight="10dp"
+                android:ellipsize="end"
+                android:shadowRadius="0.5"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowColor="#CC000000"
+                android:lines="3"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/SourceLogo2"
+                android:layout_above="@+id/FeedTitle2"
+                android:layout_alignLeft="@+id/FeedTitle2"
+                android:layout_alignStart="@+id/FeedTitle2"
+                android:src="@drawable/voltairenet"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Réseau Voltaire"
+                android:id="@+id/SourceTitle2"
+                android:layout_above="@+id/FeedTitle2"
+                android:layout_toRightOf="@+id/SourceLogo2"
+                android:layout_toEndOf="@+id/SourceLogo2"
+                android:layout_marginBottom="5dp"
+                android:textColor="#EEEEEE"
+                android:layout_marginLeft="10dp"
+                android:shadowRadius="0.5"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowColor="#AA000000" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/FeedPhoto3"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/a551840f871139e42278b4583"
+                android:scaleType="centerCrop"
+                android:background="@drawable/gradient"/>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/FeedGradient3"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/gradient"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Expert : la force militaire de la Ligue arabe a pour but de contrer l’influence iranienne"
+                android:id="@+id/FeedDescription3"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:lines="2"
+                android:ellipsize="end"
+                android:shadowRadius="0.5"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowColor="#AA000000" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                android:text="Marine Le Pen : «le Parti socialiste est laminé» (VIDEO)"
+                android:id="@+id/FeedTitle3"
+                android:layout_above="@+id/FeedDescription3"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="#FFFFFF"
+                android:textSize="23sp"
+                android:layout_marginLeft="10dp"
+                android:paddingBottom="5dp"
+                android:layout_marginRight="10dp"
+                android:ellipsize="end"
+                android:shadowRadius="0.5"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowColor="#CC000000"
+                android:lines="3"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/SourceLogo3"
+                android:layout_above="@+id/FeedTitle3"
+                android:layout_alignLeft="@+id/FeedTitle3"
+                android:layout_alignStart="@+id/FeedTitle3"
+                android:src="@drawable/sputnik"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Sputnik News"
+                android:id="@+id/SourceTitle3"
+                android:layout_above="@+id/FeedTitle3"
+                android:layout_toRightOf="@+id/SourceLogo3"
+                android:layout_toEndOf="@+id/SourceLogo3"
+                android:layout_marginBottom="5dp"
+                android:textColor="#EEEEEE"
+                android:layout_marginLeft="10dp"
+                android:shadowRadius="0.5"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowColor="#AA000000" />
+
+        </RelativeLayout>
+        
+    </ViewFlipper>
+
+    <ImageButton
+        android:id="@+id/action_next"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_action_right"
+        android:alpha="0.5"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:paddingTop="10dp"/>
+
+    <ImageButton
+        android:id="@+id/action_previous"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_action_left"
+        android:alpha="0.5"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/action_next"
+        android:layout_toStartOf="@+id/action_next"
+        android:paddingTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#FFFFFF"
+        android:visibility="invisible"/>
+
+</RelativeLayout>
