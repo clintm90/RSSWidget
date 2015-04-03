@@ -71,7 +71,7 @@ public class HomeWidgetConfigureActivity extends ActionBarActivity
 
         for(Map.Entry<String, ?> t : mPrefsGlobal.getAll().entrySet())
         {
-            mFeedListAdapter.add(new EnumFeed(this, -1, t.getKey(), t.getValue().toString(), null));
+            mFeedListAdapter.add(new EnumFeed(this, -1, t.getKey(), t.getValue().toString()));
         }
 
         FeedList.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener()

@@ -50,7 +50,7 @@ public class HomeWidget extends AppWidgetProvider
         final PendingIntent PreviousPendingIntent = PendingIntent.getBroadcast(context, 0, PreviousIntent, PendingIntent.FLAG_UPDATE_CURRENT);
         final PendingIntent NextPendingIntent = PendingIntent.getBroadcast(context, 0, NextIntent, PendingIntent.FLAG_UPDATE_CURRENT);
 
-        remoteViews.setOnClickPendingIntent(R.id.Root, NextPendingIntent);
+        //remoteViews.setOnClickPendingIntent(R.id.Root, NextPendingIntent);
         remoteViews.setOnClickPendingIntent(R.id.action_previous, PreviousPendingIntent);
         remoteViews.setOnClickPendingIntent(R.id.action_next, NextPendingIntent);
     }

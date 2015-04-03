@@ -9,16 +9,14 @@ public class EnumFeed implements Serializable
 {
     public Context mContext;
     public int ID;
-    public Drawable Icon;
     public String Name;
     public String URL;
 
-    public EnumFeed(Context context, int id, String name, String url, Drawable icon)
+    public EnumFeed(Context context, int id, String name, String url)
     {
         mContext = context;
         ID = id;
         Name = name;
         URL = url;
-        Icon = icon;
     }
 }
